@@ -1,8 +1,5 @@
 
 public class Calculator {
-	double a;
-	double b;
-	double result;
 	
 	public double addition(double a, double b){
 		return a+b;
@@ -14,6 +11,11 @@ public class Calculator {
 		return a*b;
 	}
 	public double division(double a, double b){
+		if(b == 0){
+			System.out.println("You can't divide by 0");
+		}else{
 		return a/b;
+		}
+		return 0;
 	}
 }
